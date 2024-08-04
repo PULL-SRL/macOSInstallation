@@ -20,3 +20,4 @@ cd ${cloneFolder}
 git remote rm origin
 git remote add origin git@github.com:${gitHubUsername}/${gitHubRepository}
 git push --set-upstream origin main
+cd
