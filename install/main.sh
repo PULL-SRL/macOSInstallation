@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ~/macOSInstallation/install/config.sh
+source ~/macOSInstallation/install/main.sh
 
 # clear
 
