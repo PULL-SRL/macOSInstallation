@@ -3,9 +3,8 @@
 echo "###################"
 echo "###################"
 echo "###################"
-echo ${gitHubUsername}
-echo ${gitHubRepository}
-echo ${cloneFolder}
+echo "Argument 1: $1"
+echo "Argument 2: $2"
 echo "###################"
 echo "###################"
 echo "###################"
