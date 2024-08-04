@@ -11,11 +11,13 @@ clear
 
 
 
-echo "curl con chat"
-echo "curl con chat"
+echo "curl con chat y stack"
+echo "curl con chat y stack"
+echo "curl con chat y stack"
+
 
 # source ${cloneFolder}/repository/main.sh # clone or update repository
-bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh | bash -s -- mauricio ${gitHubUsername} ${gitHubRepository} ${cloneFolder})
+bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh) -s -- mauricio ${gitHubUsername} ${gitHubRepository} ${cloneFolder}
 
 
 # cd ${cloneFolder}
