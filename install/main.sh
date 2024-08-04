@@ -1,5 +1,7 @@
 #!/bin/bash
 
+clear
+
 # source ~/macOSInstallation/install/config.sh
 
 
