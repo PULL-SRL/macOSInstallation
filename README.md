@@ -9,9 +9,11 @@ This repository will run a script to automatically configure this computer.
 You will be able to select from different configurations based on your role:
 
 - Manager
+- Administrative Personnel
 - Developer
 - Graphic Designer
 - Video Editor
+- Etc.
 
 # Prerequisites
 Install Command Line Tools (~4GB):
