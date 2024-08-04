@@ -12,13 +12,12 @@ declare gitHubRepository=macOSInstallation
 # Other configuration (don't modify)
 declare cloneFolder=~/${gitHubRepository}
 
+sdf
 
 # clear
 
 echo ${gitHubUsername}
 echo ${gitHubRepository}
-echo ${cloneFolder}
-echo ${cloneFolder}
 echo ${cloneFolder}
 
 cd ${cloneFolder}
