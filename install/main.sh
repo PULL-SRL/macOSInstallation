@@ -20,8 +20,10 @@ echo ${gitHubUsername}
 echo ${gitHubRepository}
 echo ${cloneFolder}
 
-cd ${cloneFolder}
 
-# source ${cloneFolder}/repository/main.sh # clone or update repository
+
+source ${cloneFolder}/repository/main.sh # clone or update repository
+
+cd ${cloneFolder}
 
 # source nav/main.sh # navigation
