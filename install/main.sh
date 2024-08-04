@@ -16,7 +16,11 @@ declare cloneFolder=~/${gitHubRepository}
 echo ${gitHubUsername}
 echo ${gitHubRepository}
 echo ${cloneFolder}
+echo ${cloneFolder}
+echo ${cloneFolder}
 
-source repository/main.sh # clone or update repository
+cd ${cloneFolder}
+
+# source ${cloneFolder}/repository/main.sh # clone or update repository
 
 # source nav/main.sh # navigation
