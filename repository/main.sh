@@ -1,12 +1,20 @@
 #!/bin/bash
 
-echo "ooooooooooooo"
-echo "ooooooooooooo"
-echo "ooooooooooooo"
-echo "Argument 1: $1"
-echo "Argument 2: $2"
-echo "Argument 2: $3"
-echo "Argument 2: $4"
+echo "iiiiiiiiiiii"
+echo "iiiiiiiiiiii"
+echo "iiiiiiiiiiii"
+# Recibir los parámetros
+param1=$1
+param2=$2
+param3=$3
+param4=$4
+
+# Usar los parámetros
+echo "Primer parámetro: $param1"
+echo "Segundo parámetro: $param2"
+echo "Tercer parámetro: $param3"
+echo "Cuarto parámetro: $param4"
+
 echo "ooooooooooooo"
 echo "ooooooooooooo"
 echo "ooooooooooooo"
