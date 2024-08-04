@@ -13,7 +13,7 @@ echo ${gitHubUsername}
 echo ${gitHubRepository}
 echo ${cloneFolder}
 
-echo "source clone folder repo main sh"
+echo "curl repo"
 # source ${cloneFolder}/repository/main.sh # clone or update repository
 bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh)
 
