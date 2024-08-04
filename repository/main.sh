@@ -1,9 +1,13 @@
 #!/bin/bash
 
 echo "###################"
+echo "###################"
+echo "###################"
 echo ${gitHubUsername}
 echo ${gitHubRepository}
 echo ${cloneFolder}
+echo "###################"
+echo "###################"
 echo "###################"
 
 # Clone, repository folder is empty
