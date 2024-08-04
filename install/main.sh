@@ -15,7 +15,7 @@ echo ${cloneFolder}
 
 echo "curl repo"
 # source ${cloneFolder}/repository/main.sh # clone or update repository
-bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh)
+bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh | bash -s -- ${gitHubUsername} ${gitHubRepository} ${cloneFolder})
 
 
 # cd ${cloneFolder}

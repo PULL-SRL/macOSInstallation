@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo "###################"
+echo ${gitHubUsername}
+echo ${gitHubRepository}
+echo ${cloneFolder}
+echo "###################"
+
 # Clone, repository folder is empty
 if [[ ! -d ${cloneFolder} ]]; then
     echo ""
