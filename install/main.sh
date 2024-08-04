@@ -1,8 +1,8 @@
 #!/bin/bash
 
-source install/config.sh
+source ~/macOSInstallation/install/config.sh
 
-clear
+# clear
 
 echo ${gitHubUsername}
 echo ${gitHubRepository}
