@@ -11,8 +11,10 @@ clear
 
 
 
-echo "curl repooooooooooooooooooo"
-echo "curl repooooooooooooooooooo"
+echo "curl con mauricio"
+echo "curl con mauricio"
+echo "curl con mauricio"
+echo "curl con mauricio"
 # source ${cloneFolder}/repository/main.sh # clone or update repository
 bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh | bash -s -- mauricio ${gitHubUsername} ${gitHubRepository} ${cloneFolder})
 
