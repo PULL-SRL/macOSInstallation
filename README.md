@@ -25,5 +25,4 @@ xcode-select --install
 Run the installation script:
 ``` 
 bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/install/main.sh)
-git@github.com:PULL-SRL/macOSInstallation.git
 ```
