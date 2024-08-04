@@ -1,10 +1,5 @@
 #!/bin/bash
 
-clear
-
-# source ~/macOSInstallation/install/config.sh
-
-
 # Config
 declare gitHubUsername=PULL-SRL
 declare gitHubRepository=macOSInstallation
@@ -12,15 +7,15 @@ declare gitHubRepository=macOSInstallation
 # Other configuration (don't modify)
 declare cloneFolder=~/${gitHubRepository}
 
-# clear
+clear
 
 echo ${gitHubUsername}
 echo ${gitHubRepository}
 echo ${cloneFolder}
 
 echo "source clone folder repo main sh"
-source ${cloneFolder}/repository/main.sh # clone or update repository
-
+# source ${cloneFolder}/repository/main.sh # clone or update repository
+bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh)
 
 
 # cd ${cloneFolder}
