@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Receive parameters
-gitHubUsername=$1
-gitHubRepository=$2
-cloneFolder=$3
+declare gitHubUsername=$1
+declare gitHubRepository=$2
+declare cloneFolder=$3
 
-Clone, repository folder is empty
+# Clone, repository folder is empty
 if [[ ! -d ${cloneFolder} ]]; then
     echo ""
     echo "Downloading Mac OS Installation..."
