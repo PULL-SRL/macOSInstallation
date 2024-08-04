@@ -11,6 +11,11 @@ clear
 
 
 echo "111111"
+echo "111111"
+echo "111111"
+echo "111111"
+echo "111111"
+echo "111111"
 
 
 # source ${cloneFolder}/repository/main.sh # clone or update repository
