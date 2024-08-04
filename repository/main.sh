@@ -16,7 +16,9 @@ if [[ -d ${cloneFolder} ]]; then
 fi
 
 # Update remote to use SSH
+echo "before cd clone folder"
 cd ${cloneFolder}
+echo "after cd clone folder"
 git remote rm origin
 git remote add origin git@github.com:${gitHubUsername}/${gitHubRepository}
 git push --set-upstream origin main
