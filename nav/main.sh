@@ -1,13 +1,15 @@
 #!/bin/bash
 
+source nav/config.sh
+
 echo "in side nav"
 echo ${gitHubUsername} 
 echo ${gitHubRepository} 
 echo ${cloneFolder}
 echo "in side nav"
 
-# Nav options config
-options=("Option 1" "Option 2" "Option 3" "Exit")
+
+
 
 # Get config
 source nav/config.sh
