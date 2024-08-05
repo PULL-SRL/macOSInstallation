@@ -13,7 +13,7 @@ declare cloneFolder=$3
 # declare cloneFolder=~/${gitHubRepository}
 
 echo "githubusername >>"
-echo ${gitHubUsername}
+echo ${cloneFolder}
 echo "<< configusernmsd"
 
 exit 0
