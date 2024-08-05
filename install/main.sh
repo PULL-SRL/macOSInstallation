@@ -10,16 +10,16 @@ declare cloneFolder=~/${gitHubRepository}
 clear
 
 
-echo "111111"
-echo "111111"
-echo "111111"
-echo "111111"
-echo "111111"
-echo "111111"
+echo "2222222"
+echo "2222222"
+echo "2222222"
+echo "2222222"
+echo "2222222"
+echo "2222222"
 
 
 # source ${cloneFolder}/repository/main.sh # clone or update repository
-bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh) -s -- ${gitHubUsername} ${gitHubRepository} ${cloneFolder}
+bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh) ${gitHubUsername} ${gitHubRepository} ${cloneFolder}
 
 echo ${cloneFolder}
 echo "before in the folder"
