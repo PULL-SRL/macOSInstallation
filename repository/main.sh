@@ -1,9 +1,20 @@
 #!/bin/bash
 
 # Receive parameters
-declare gitHubUsername=$1
-declare gitHubRepository=$2
-declare cloneFolder=$3
+# declare gitHubUsername=$1
+# declare gitHubRepository=$2
+# declare cloneFolder=$3
+
+# Config
+# declare gitHubUsername=PULL-SRL
+# declare gitHubRepository=macOSInstallation
+
+# Other configuration (don't modify)
+# declare cloneFolder=~/${gitHubRepository}
+
+echo "config >>"
+source config.sh
+echo "<< config"
 
 # Clone, repository folder is empty
 if [[ ! -d ${cloneFolder} ]]; then
