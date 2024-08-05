@@ -5,27 +5,14 @@ declare gitHubUsername=$1
 declare gitHubRepository=$2
 declare cloneFolder=$3
 
-# Config
-# declare gitHubUsername=PULL-SRL
-# declare gitHubRepository=macOSInstallation
-
-# Other configuration (don't modify)
-# declare cloneFolder=~/${gitHubRepository}
-
-echo "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg >>"
-echo ${cloneFolder}
-echo "<< ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg"
-
-exit 0
-
-# Clone, repository folder is empty
+# Repository folder is empty, clone it
 if [[ ! -d ${cloneFolder} ]]; then
     echo ""
     echo "Downloading Mac OS Installation..."
     git clone https://github.com/${gitHubUsername}/${gitHubRepository}.git ${cloneFolder}
 fi
 
-# Update, repository folder already exists
+# Repository folder exists, update it
 if [[ -d ${cloneFolder} ]]; then
     echo ""
     echo "Updating Mac OS Installation..."
