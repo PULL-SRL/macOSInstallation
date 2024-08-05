@@ -7,10 +7,10 @@ draw_menu() {
     for i in "${!options[@]}"; do
         if [ "$i" -eq "$current_option" ]; then
             # Highlight the currently selected option
-            echo -e "${GREEN}> ${YELLOW}${options[$i]}${NC}"
+            echo -e "${GREEN}>  ${YELLOW}${options[$i]}${NC}"
         else
             # Display non-selected options
-            echo -e "  ${options[$i]}"
+            echo -e "   ${options[$i]}"
         fi
     done
 }

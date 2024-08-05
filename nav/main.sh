@@ -4,8 +4,6 @@
 source nav/config.sh
 source nav/functions.sh
 
-
-
 # Capture keyboard input
 while true; do
     draw_menu
