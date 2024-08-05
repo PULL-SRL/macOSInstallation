@@ -12,7 +12,7 @@ clear
 echo "#############################"
 echo "#############################"
 echo "#############################"
-echo "###########hola###########"
+echo "###########hola 1###########"
 echo "#############################"
 echo "#############################"
 
@@ -21,7 +21,9 @@ source <(curl -sL https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/m
 
 # bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh) #${gitHubUsername} ${gitHubRepository} ${cloneFolder}
 # cd ${cloneFolder}
+echo ">>>>"
 echo ${cloneFolder}
+echo "<<<<"
 
 
 # Navigation
