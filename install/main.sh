@@ -18,12 +18,12 @@ echo "#############################"
 
 # Repository
 # source <(curl -s -f https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/config.sh)# >> ~/test.sh
-source /dev/stdin <<< "$(curl --insecure https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/config.sh)";
-bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh) ${gitHubUsername} ${gitHubRepository} ${cloneFolder}
 
 # cd ${cloneFolder}
+source /dev/stdin <<< "$(curl --insecure https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/config.sh)";
+echo ${gitHubUsername} ${gitHubRepository} ${cloneFolder}
 echo ">>>>"
-echo ${cloneFolder}
+bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh) ${gitHubUsername} ${gitHubRepository} ${cloneFolder}
 echo "<<<<"
 
 
