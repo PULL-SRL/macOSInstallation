@@ -2,15 +2,9 @@
 
 echo "source config outside"
 
-source nav/config.sh
-
-echo "in side nav"
 echo ${gitHubUsername} 
 echo ${gitHubRepository} 
 echo ${cloneFolder}
-echo "in side nav"
-
-
 
 
 # Get config
