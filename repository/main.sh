@@ -16,6 +16,8 @@ echo "config >>"
 source config.sh
 echo "<< config"
 
+exit 0
+
 # Clone, repository folder is empty
 if [[ ! -d ${cloneFolder} ]]; then
     echo ""
