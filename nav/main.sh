@@ -30,9 +30,9 @@ while true; do
             ;;
         "")  # Enter key
             case "$current_option" in
-                0) echo "You selected Option 1";;
-                1) echo "You selected Option 2";;
-                2) echo "You selected Option 3";;
+                0) show_message "You selected Option 1";;
+                1) show_message "You selected Option 2";;
+                2) show_message "You selected Option 3";;
                 3) 
                     clear
                     echo -e "${RED}Exiting...${NC}"
