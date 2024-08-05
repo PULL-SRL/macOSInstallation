@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "source config outside"
+
 source nav/config.sh
 
 echo "in side nav"
@@ -15,7 +17,7 @@ echo "in side nav"
 source nav/config.sh
 
 # Functions
-source functions.sh
+source nav/functions.sh
 
 num_options=${#options[@]}
 current_option=0
