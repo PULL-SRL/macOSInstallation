@@ -1,11 +1,12 @@
 #!/bin/bash
 
-echo "source config file"
 
 # Nav options
 options=("Option 1" "Option 2" "Option 3" "Exit")
 
-echo ${options}
+num_options=${#options[@]}
+current_option=0
+
 
 # Color codes
 RED='\033[0;31m'     # Red
