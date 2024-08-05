@@ -12,9 +12,9 @@
 # Other configuration (don't modify)
 # declare cloneFolder=~/${gitHubRepository}
 
-echo "config >>"
-source config.sh
-echo "<< config"
+echo "githubusername >>"
+source ${gitHubUsername}
+echo "<< configusernmsd"
 
 exit 0
 

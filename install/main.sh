@@ -12,14 +12,15 @@ clear
 echo "#############################"
 echo "#############################"
 echo "#############################"
-echo "########### s f flags ###########"
+echo "####### s f flags ###########"
 echo "#############################"
 echo "#############################"
 
 # Repository
-source <(curl -s -f https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/config.sh)
+# source <(curl -s -f https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/config.sh)# >> ~/test.sh
+source /dev/stdin <<< "$(curl --insecure https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/config.sh)";
+bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh) ${gitHubUsername} ${gitHubRepository} ${cloneFolder}
 
-# bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh) #${gitHubUsername} ${gitHubRepository} ${cloneFolder}
 # cd ${cloneFolder}
 echo ">>>>"
 echo ${cloneFolder}
