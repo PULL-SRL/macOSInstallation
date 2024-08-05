@@ -2,8 +2,11 @@
 
 # Function to draw the menu
 draw_menu() {
+
     clear
+
     echo -e "${BLUE}Select an option using the arrow keys and Enter${NC}"
+    
     for i in "${!options[@]}"; do
         if [ "$i" -eq "$current_option" ]; then
             # Highlight the currently selected option
