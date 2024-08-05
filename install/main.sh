@@ -12,12 +12,12 @@ clear
 echo "#############################"
 echo "#############################"
 echo "#############################"
-echo "###########bmbmbmmbmmb###########"
+echo "###########hola###########"
 echo "#############################"
 echo "#############################"
 
 # Repository
-source <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/config.sh)
+source <(curl -sL https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/config.sh)
 
 # bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh) #${gitHubUsername} ${gitHubRepository} ${cloneFolder}
 # cd ${cloneFolder}
