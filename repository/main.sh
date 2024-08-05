@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Receive parameters
-# declare gitHubUsername=$1
-# declare gitHubRepository=$2
-# declare cloneFolder=$3
+declare gitHubUsername=$1
+declare gitHubRepository=$2
+declare cloneFolder=$3
 
 # Config
 # declare gitHubUsername=PULL-SRL
@@ -13,7 +13,7 @@
 # declare cloneFolder=~/${gitHubRepository}
 
 echo "githubusername >>"
-source ${gitHubUsername}
+echo ${gitHubUsername}
 echo "<< configusernmsd"
 
 exit 0
