@@ -18,8 +18,9 @@ echo "#############################"
 
 # Repository
 source <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/config.sh)
-bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh) #${gitHubUsername} ${gitHubRepository} ${cloneFolder}
-cd ${cloneFolder}
+
+# bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh) #${gitHubUsername} ${gitHubRepository} ${cloneFolder}
+# cd ${cloneFolder}
 echo ${cloneFolder}
 
 
