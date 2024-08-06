@@ -1,8 +1,10 @@
 #!/bin/bash
 
-# source core/config.sh
+source core/functions.sh
 source nav/config.sh
 source nav/functions.sh
+
+@ "Confirm you want to proceed"
 
 # Capture keyboard input
 while true; do

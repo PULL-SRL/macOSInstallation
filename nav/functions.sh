@@ -1,24 +1,24 @@
+#!/bin/bash
 
+source core/config.sh
 
-# Function to draw the menu
+# Draw navigation manu
 draw_menu() {
 
     clear
 
-    echo -e "${BLUE}Select an option using the arrow keys and Enter${NC}"
-    
+    @ "Select a profile:" "› Use arrow-keys. Return to submit."
+
     for i in "${!options[@]}"; do
         if [ "$i" -eq "$current_option" ]; then
-            # Highlight the currently selected option
-            echo -e "${GREEN}>  ${YELLOW}${options[$i]}${NC}"
+            echo -e "${green}${bold}>  ${yellow}${bold}${options[$i]}${reset}" # Highlight the currently selected option
         else
-            # Display non-selected options
-            echo -e "   ${options[$i]}"
+            echo -e "${reset}   ${options[$i]}${reset}" # Display non-selected options
         fi
     done
 }
 
-# Function to display a message
+# Display a message (to be removed later...)
 show_message() {
     local message=$1
     clear
