@@ -9,7 +9,9 @@ source nav/functions.sh
 # Capture keyboard input
 while true; do
     draw_menu
+
     read -rsn1 input
+    
     case "$input" in
         $'\x1b')  # If it's an escape sequence
             read -rsn2 input
@@ -32,7 +34,10 @@ while true; do
             ;;
         "")  # Enter key
             case "$current_option" in
-                0) show_message "You selected Option 1";;
+                0) 
+                    show_message "You selected Option 1"
+
+                    ;;
                 1) show_message "You selected Option 2";;
                 2) show_message "You selected Option 3";;
                 3) 
