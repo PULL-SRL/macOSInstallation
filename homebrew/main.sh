@@ -8,8 +8,8 @@
 # Runs default casks and custom installationProfile casks.
 
 source homebrew/defaultFormulas.sh
-source defaultFonts.sh
-source defaultCasks.sh
+source homebrew/defaultFonts.sh
+source homebrew/defaultCasks.sh
 
 # Install/update Homebrew
 if test ! $(which brew); then
