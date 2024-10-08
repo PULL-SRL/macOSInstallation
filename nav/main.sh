@@ -39,7 +39,7 @@ while true; do
                 4) installationProfile="videoEditor";;
                 5) 
                     clear
-                    _ "Exiting...\n"
+                    _ "Exiting..."
                     _ ""
                     exit 0
                     ;;
@@ -51,4 +51,4 @@ done
 
 # clear
 
-source installationProfile/$installationProfile/main.sh
+source installationProfile/$installationProfile.sh
