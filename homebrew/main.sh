@@ -7,7 +7,7 @@
 # Default casks are shared and non-shared. 
 # Runs default casks and custom installationProfile casks.
 
-source ./defaultFormulas.sh
+source homebrew/defaultFormulas.sh
 source defaultFonts.sh
 source defaultCasks.sh
 
