@@ -17,14 +17,14 @@ else
     echo ""
     echo "Updating repository..."
     cd $cloneFolder
-    git pull origin master
+    git pull origin main
 fi
 
 # Update remote to use SSH
 cd ${cloneFolder}
 git remote rm origin
 git remote add origin git@github.com:${gitHubUsername}/${gitHubRepository}
-git push --set-upstream origin master
+git push --set-upstream origin main
 
 # Start navigation
 cd ${cloneFolder}
