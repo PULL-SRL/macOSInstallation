@@ -4,7 +4,7 @@ clear
 
 # Get repository config
 source /dev/stdin <<< "$(curl --insecure https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/config.sh)" # get config
-
+echo "testing repo config and folder"
 # Get repository
 bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh) ${gitHubUsername} ${gitHubRepository} ${cloneFolder} # get repository
 
