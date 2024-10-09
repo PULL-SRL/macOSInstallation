@@ -2,9 +2,11 @@
 
 clear
 
-# Repository
+# Get repository config
 source /dev/stdin <<< "$(curl --insecure https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/config.sh)" # get config
-# bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh) ${gitHubUsername} ${gitHubRepository} ${cloneFolder} # get repository
+
+# Get repository
+bash <(curl -L https://raw.githubusercontent.com/PULL-SRL/macOSInstallation/main/repository/main.sh) ${gitHubUsername} ${gitHubRepository} ${cloneFolder} # get repository
 
 # Download repository
 if [[ ! -d ${cloneFolder} ]]; then
