@@ -10,12 +10,12 @@ source /dev/stdin <<< "$(curl --insecure https://raw.githubusercontent.com/PULL-
 if [[ ! -d ${cloneFolder} ]]; then
     # Clone
     echo ""
-    echo "Downloading repository..."
+    echo "Downloading repository... install"
     git clone https://github.com/${gitHubUsername}/${gitHubRepository}.git ${cloneFolder}
 else
     # Update
     echo ""
-    echo "Updating repository..."
+    echo "Updating repository...install"
     cd $cloneFolder
     git pull origin main
 fi

@@ -8,14 +8,14 @@ declare cloneFolder=$3
 # Repository folder is empty, clone it
 if [[ ! -d ${cloneFolder} ]]; then
     echo ""
-    echo "Downloading Mac OS Installation..."
+    echo "Downloading Mac OS Installation... repository"
     git clone https://github.com/${gitHubUsername}/${gitHubRepository}.git ${cloneFolder}
 fi
 
 # Repository folder exists, update it
 if [[ -d ${cloneFolder} ]]; then
     echo ""
-    echo "Updating Mac OS Installation..."
+    echo "Updating Mac OS Installation...repository"
     cd $cloneFolder
     git pull origin main
 fi
