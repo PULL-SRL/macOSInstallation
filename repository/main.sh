@@ -20,8 +20,8 @@ if [[ -d ${cloneFolder} ]]; then
     git pull origin main
 fi
 
-# Update remote to use SSH
-cd ${cloneFolder}
-git remote rm origin
-git remote add origin git@github.com:${gitHubUsername}/${gitHubRepository}
-git push --set-upstream origin main
+# # Update remote to use SSH
+# cd ${cloneFolder}
+# git remote rm origin
+# git remote add origin git@github.com:${gitHubUsername}/${gitHubRepository}
+# git push --set-upstream origin main

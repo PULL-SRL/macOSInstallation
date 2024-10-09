@@ -21,10 +21,10 @@ else
 fi
 
 # Update remote to use SSH
-cd ${cloneFolder}
-git remote rm origin
-git remote add origin git@github.com:${gitHubUsername}/${gitHubRepository}
-git push --set-upstream origin main
+# cd ${cloneFolder}
+# git remote rm origin
+# git remote add origin git@github.com:${gitHubUsername}/${gitHubRepository}
+# git push --set-upstream origin main
 
 # Start navigation
 cd ${cloneFolder}
