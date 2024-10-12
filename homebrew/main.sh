@@ -37,7 +37,10 @@ _i "Installing Homebrew fonts..."
 # brew tap homebrew/cask-fonts
 # brew install cask ${defaultFonts[@]}
 
-printf "${casks}"
+for cask in "${casks[@]}"; do
+    echo "$cask"
+done
+
 exit 0
 
 # Install casks, shared and non-shared ones
