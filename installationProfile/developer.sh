@@ -24,11 +24,11 @@ casks=(
     postman # Test REST APIs. Makes HTTP request
 )
 
-# Homebrew
-source homebrew/main.sh
-
 # Merge defaultCasks with installationProfile casks
 casks=("${defaultCasks[@]}" "${casks[@]}")
+
+# Homebrew
+source homebrew/main.sh
 
 _i "Downloading Homebrew casks..."
 for cask in ${casks[@]}; do
