@@ -17,11 +17,3 @@ draw_menu() {
         fi
     done
 }
-
-# Display a message (to be removed later...)
-show_message() {
-    local message=$1
-    clear
-    echo -e "${BLUE}${message}${NC}"
-    sleep 1  # Display the message for 1 second
-}

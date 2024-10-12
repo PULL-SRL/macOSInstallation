@@ -49,6 +49,6 @@ while true; do
     esac
 done
 
-# clear
+clear
 
 source installationProfile/$installationProfile.sh
