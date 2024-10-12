@@ -34,7 +34,7 @@ _i "Installing Homebrew formulas..."
 
 # Install fonts
 _i "Installing Homebrew fonts..."
-brew tap homebrew/cask-fonts
+# brew tap homebrew/cask-fonts
 # brew install cask ${defaultFonts[@]}
 
 printf "${casks}"
