@@ -37,6 +37,13 @@ _i "Installing Homebrew fonts..."
 # brew tap homebrew/cask-fonts
 # brew install cask ${defaultFonts[@]}
 
+# Merge defaultCasks with installationProfile casks
+casks=("${defaultCasks[@]}" "${casks[@]}")
+
+
+
+echo "==================="
+
 for cask in "${casks[@]}"; do
     echo "$cask"
 done
