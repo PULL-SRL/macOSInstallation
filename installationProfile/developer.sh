@@ -28,20 +28,4 @@ casks=(
 casks=("${defaultCasks[@]}" "${casks[@]}")
 
 # Homebrew
-source homebrew/main.sh
-
-_i "Downloading Homebrew casks..."
-for cask in ${casks[@]}; do
-    [[ ${cask} == 'spotify' ]] && continue
-    [[ ${cask} == 'hyperdock' ]] && continue    
-    [[ ${cask} == 'homebrew/cask-versions/google-chrome-canary' ]] && continue
-    _s "Downloading:  ${cask}"
-    brew fetch --cask ${cask}
-done
-
-_i "Installing Homebrew casks..."
-for cask in ${casks[@]}; do
-	renew_sudo
-    _s "Installing:  ${cask}"
-    brew install --cask ${cask}
-done
+# source homebrew/main.sh
