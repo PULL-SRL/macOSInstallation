@@ -40,7 +40,6 @@ _i "Installing Homebrew fonts..."
 # Merge defaultCasks with installationProfile casks
 casks=("${defaultCasks[@]}" "${casks[@]}")
 
-
 # Install casks, shared and non-shared ones
 _i "Downloading Homebrew casks..."
 for cask in ${casks[@]}; do
