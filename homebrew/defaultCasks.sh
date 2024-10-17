@@ -6,7 +6,6 @@ defaultCasks=(
 
     # utilities
     transmission # Torrent GUI
-    cakebrew # Homebrew GUI
     google-drive # File storage GUI
 
     # chat & collaboration
