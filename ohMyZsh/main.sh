@@ -12,3 +12,6 @@ if [[ -z $REPLY || $REPLY =~ ^[Yy]$ ]]; then
     open https://ohmyz.sh/
     sleep 1 
 fi
+
+@@ "Have you completed the Oh My Zsh installation? (Y/n)"
+read -r -n 1
