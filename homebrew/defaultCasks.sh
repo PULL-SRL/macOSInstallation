@@ -23,12 +23,6 @@ defaultCasks=(
     iina
 
     # preview files (space bar preview) for developers https://github.com/sindresorhus/quick-look-plugins
-    qlcolorcode
-    qlstephen 
-    qlmarkdown 
-    quicklook-json 
-    qlimagesize 
     suspicious-package 
-    quicklookase 
     qlvideo
 )
