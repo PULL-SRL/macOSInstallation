@@ -4,9 +4,9 @@ defaultFonts=(
     font-clear-sans
     font-open-sans
     font-noto-sans
-    font-roboto 
+    font-roboto
     font-roboto-mono
-    font-roboto-sla
+    font-roboto-slab
     font-montserrat
     font-lato
     font-fira-code
