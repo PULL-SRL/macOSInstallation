@@ -12,13 +12,13 @@ source sshKey/main.sh
 casks=(
     # browsers
     tor-browser
+    firefox
 
     # database
     sequel-ace # MySQL & MariaDB GUI
 
     # development related
     visual-studio-code # Source code editor
-    sourcetree # Git GUI
     figma # Design and prototyping
     iterm2 # Terminal alternative
     postman # Test REST APIs. Makes HTTP request
