@@ -1,7 +1,6 @@
 # Shared fonts used for all installationProfiles
 
 defaultFonts=(
-    font-clear-sans
     font-open-sans
     font-noto-sans
     font-roboto
