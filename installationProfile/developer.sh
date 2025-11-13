@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Confirm before proceeding
-source proceeedConfirmation/main.sh
+source proceedConfirmation/main.sh
 
 # Install ssh key
 source sshKey/main.sh
