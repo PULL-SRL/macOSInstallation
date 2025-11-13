@@ -3,10 +3,12 @@
 @ "Installing Oh My Zsh"
 #################################################
 
-@@ "Do you want to continue? (Y/n)"
+@@ "Do you want to install Oh My Zsh? (Y/n)"
 read -r -n 1
 
-if [[ $REPLY =~ ^[Yy]$ ]]; then
+if [[ -z $REPLY || $REPLY =~ ^[Yy]$ ]]; then
     open -a Terminal .
+    sleep 1 
     open https://ohmyz.sh/
+    sleep 1 
 fi

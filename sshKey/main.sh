@@ -16,19 +16,3 @@ open https://github.com/account/ssh
 @@ "Have you pasted the ssh key (already in your clipboard) to GitHub? (Y)"
 read -r -n 1
 
-# Set sudo permissions for the rest of the processes
-@ "Sudo"
-
-@@ "Please enter your admin password"
-
-until sudo --non-interactive true 2> /dev/null; do # if password is wrong, keep asking
-    read -s -p '' sudo_password
-    echo
-    sudo --stdin --validate <<< "${sudo_password}" 2> /dev/null
-done
-
-_i "Keep-alive sudo time stamp until finished"
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
-
-_i "Prevent computer from sleeping (caffeinate)"
-sudo caffeinate -d -i -m -s -u &
