@@ -1,8 +1,6 @@
 # Shared formulas used for all installationProfiles
 
 defaultFormulas=(
-    zsh # default macOs shell
-
     cask # describes how a installation is done
     
     curl # transferring data with URLs
