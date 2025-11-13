@@ -11,7 +11,7 @@ defaultFonts=(
     font-lato
     font-fira-code
     font-source-code-pro
-    font-source-sans-pro
+    font-source-sans-3
     font-raleway
     font-oswald
     font-poppins

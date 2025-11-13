@@ -34,7 +34,6 @@ brew install ${defaultFormulas[@]}
 
 # Install fonts
 _i "Installing Homebrew fonts..."
-brew tap homebrew/cask-fonts
 brew install --cask ${defaultFonts[@]}
 
 # Merge defaultCasks with installationProfile casks

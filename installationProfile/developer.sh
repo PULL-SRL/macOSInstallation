@@ -33,5 +33,8 @@ source homebrew/main.sh
 # Copy files
 source files/main.sh
 
+# Install Oh My Zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Installation complete
 _s "Completed. "
