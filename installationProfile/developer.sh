@@ -20,7 +20,7 @@ casks=(
     # development related
     visual-studio-code # Source code editor
     figma # Design and prototyping
-    iterm2 # Terminal alternative
+    # iterm2 # Terminal alternative
     postman # Test REST APIs. Makes HTTP request
 )
 
