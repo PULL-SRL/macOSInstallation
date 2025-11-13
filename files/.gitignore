@@ -1,0 +1,23 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+
+# Log files
+*.log
+
+# Build artifacts
+build/
+bin/
+obj/
+
+# Package manager files
+/node_modules/
+/bower_components/
+/vendor/
+
+# Personal files
+.env
+.vault
