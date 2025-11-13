@@ -1,0 +1,146 @@
+#!/bin/bash
+
+# Up one directlry
+alias ..='cd ..'
+alias cd..='cd ..'
+
+# Go to Projects volume
+alias p='cd /Volumes/Projects'
+alias pro='cd /Volumes/Projects'
+alias projects='cd /Volumes/Projects'
+
+# Clear
+alias c='clear'
+
+# List only directories
+alias lsd="ls -lF | grep '^d'"
+
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+
+# Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+# alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
+
+# Google Chrome
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+alias ch='chrome'
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
+# Show active network interfaces
+alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
+
+# Print each PATH entry on a separate line
+alias path='echo $PATH'
+
+# PHP
+alias pa="php artisan"
+alias s='php artisan serve'
+alias w='php artisan queue:work'
+alias f='php artisan queue:flush'
+alias ff='php artisan queue:failed'
+alias t='php artisan tenant:create-default'
+
+#############
+#    Git    #
+#############
+getBranchName() { git rev-parse --abbrev-ref HEAD } 
+
+go() { git fetch && git switch $1 && git pull } # SWitches to diferent branch - $1 is the branch name
+gof() { git fetch && git switch "feature/$1" && git pull } # SWitches to diferent branch - $1 is the branch name
+alias god="go develop"
+#alias reset="git reset --soft HEAD~1"
+alias undo="git reset --soft HEAD~1"
+
+alias graph="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
+#alias gg="graph"
+
+alias fetch="git fetch && git branch -v -a"
+#alias mm="git merge"
+#alias merge="git merge"
+alias pull="git pull"
+alias push="git push"
+
+alias branch="git branch"
+alias branches="branch"
+alias br="branch"
+del() { git branch -d $1 } # deletes a branch - $1 is the branch name
+delete() { # deletes current branch
+    echo "Deleting $current_branch (2 step process)"
+    current_branch=$(getBranchName)
+    if [ "develop" = "$current_branch" ]; then
+        echo "Error: You can't delete develop branch."
+        return 1
+    fi    
+    god
+    git branch -d $current_branch
+}
+
+alias cm='echo "Enter commit message: " && read MSG && git add . && git commit -m "$MSG"'
+alias commit='echo "Enter commit message: " && read MSG && git add . && git commit -m "$MSG"'
+alias try='echo "Enter branch to get: " && read MSG && git merge "$MSG" --no-commit --no-ff -X theirs && git reset'
+
+alias dev='npm run dev'
+alias d='dev'
+
+alias lerna='npx lerna bootstrap --hoist && npm run dev'
+alias le='lerna'
+
+alias stash='git stash --include-untracked'
+alias restore='git stash apply'
+alias unStash='restore'
+alias getStash='restore'
+
+alias update='git pull origin develop'
+
+alias discard='git restore . && git clean -f'
+
+get() { git fetch && git switch $1 && git pull && git switch develop && git merge --no-ff --no-edit origin/"$1" && git reset HEAD~1 } # Gets branch without merging - $1 is the branch name
+
+new() { git checkout -b "feature/$1" } # Creates new feature - $1 is the branch name
+newIssue() { git checkout -b "issue/$1" } # Creates new issue - $1 is the branch name
+newBug() { git checkout -b "bug/$1" } # Creates new hot fix - $1 is the branch name
+
+merge() {  # merge current branch into develop
+    echo "Merging $current_branch into develop (3 step process)"
+    current_branch=$(getBranchName)
+
+    if [ "develop" = "$current_branch" ]; then
+        echo "Error: You can't merge develop branch."
+        return 1
+    fi    
+
+    git merge develop --no-commit
+    git switch develop
+    git merge $current_branch --no-ff --no-commit
+}
+
+# alias new="git checkout -b"``
+# function new() { git checkout -b feature/"$@"; }
+# function new
+#     git checkout -b feature/$argv[1]
+# end
+
+# Git suggested (not used)
+# alias aa = 'git add --all'
+# alias bv = 'git branch -vv'
+# alias ba = 'git branch -ra'
+# alias bd = 'git branch -d'``
+# alias ca = 'git commit --amend'
+# alias cb = 'git checkout -b'
+# alias cm = 'git commit -a --amend -C HEAD'
+# alias ci = 'git commit -a -v'
+# alias co = 'git checkout'
+# alias di = 'git diff'
+# alias ll = 'git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat'
+# alias ld = 'git log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph'
+# alias ls = 'git log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative'
+# alias mm = 'git merge --no-ff'
+# alias st = 'git status --short --branch'
+# alias tg = 'git tag -a '
+# alias pu = 'git push --tags'
+# alias un = 'git reset --hard HEAD  '
+# alias uh = 'git reset --hard HEAD^'

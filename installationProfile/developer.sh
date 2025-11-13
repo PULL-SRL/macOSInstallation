@@ -27,3 +27,8 @@ casks=(
 # Homebrew
 source homebrew/main.sh
 
+# Copy files
+source files/main.sh
+
+# Installation complete
+_s "Completed. "
