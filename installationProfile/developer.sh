@@ -12,14 +12,19 @@ source sshKey/main.sh
 # Homebrew software (casks) for this profile
 # Default software (casks) will be installed by defaut when running homebrew/main.sh file
 casks=(
-    # browsers
+    # Browsers
     tor-browser
     firefox
 
-    # database
+    # Databases
+    mysql
     sequel-ace # MySQL & MariaDB GUI
 
-    # development related
+    # Services
+    redis
+    php
+    
+    # Development related
     visual-studio-code # Source code editor
     figma # Design and prototyping
     postman # Test REST APIs. Makes HTTP request
@@ -27,6 +32,12 @@ casks=(
 
 # Homebrew
 source homebrew/main.sh
+
+# Start services
+brew services start mysql
+brew services start redis
+brew services start php
+brew services list
 
 # Oh My Zsh
 source ohMyZsh/main.sh
