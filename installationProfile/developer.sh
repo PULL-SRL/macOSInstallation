@@ -17,12 +17,7 @@ casks=(
     firefox
 
     # Databases
-    mysql
     sequel-ace # MySQL & MariaDB GUI
-
-    # Services
-    redis
-    php
     
     # Development related
     visual-studio-code # Source code editor

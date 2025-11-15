@@ -20,6 +20,9 @@ defaultFormulas=(
     php # programming language (PHP)
     brew-php-switcher # change PHP version    
     composer # PHP package manager
+
+    mysql # database
+    redis # queue
     
     svn # used for fonts
 )
