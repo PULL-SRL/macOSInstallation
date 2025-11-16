@@ -50,3 +50,4 @@ git config --global user.name
 
 # Installation complete
 _s "Completed. "
+sudo pkill caffeinate #restore 
